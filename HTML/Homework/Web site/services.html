@@ -6,55 +6,114 @@
     <link rel="shortcut icon" href="img\octopus.png">
 </head>
 <body background="img\FONT1.jpg">
+    <div align="right">
+        <label for="searchField">Поиск по сайту</label>
+        <input id="searchField" type="search">
+    </div>
 
-<img src="img\FONT_menu.jpg" alt="Здесь должна быть картинка">
+    <img src="img\FONT_menu.jpg" alt="Здесь должна быть картинка">
 
-<h1 align="center">Веб-студия OCTOPUS</h1>
+    <h1 align="center">Веб-студия OCTOPUS</h1>
 
-<img src="img\FONT_menu_gold.jpg" alt="Здесь должна быть картинка">
+    <img src="img\FONT_menu_gold.jpg" alt="Здесь должна быть картинка">
 
-<a href="index.html"> <img src="img\Main.jpg"> </a>
-<br>
-
-<a href="services.html"> <img src="img\services.jpg"> </a>
-<br>
-
-<a href="contacts.html"> <img src="img\contacts.jpg"> </a>
-<br>
-
-
-
-<h2 align="center">Веб-студия предоставаляет широкий спектр услуг</h2>
-
-<ul type="square">  <!--circle | square-->
-
-    <li>Интеренет-маркетинг</li>
-    <li>Создание сайтов</li>
-    <li>Продвижение сайтов</li>
-    <li>Поддержка сайтов</li>
-    <li>
-        <a href="web_calc.html">Веб-калькулятор</a>
-    </li>
-</ul>
-
-
-<table border="1">
-    <caption align="center">Прайс лист</caption>
+    <a href="index.html"> <img src="img\Main.jpg"> </a>
     <br>
-    <tr>
-        <th>Вид услуги</th>
-        <td>Интеренет-маркетинг</<td>
-        <<td>>Создание сайтов</<td>>
-        <<td>>Продвижение сайтов</<td>>
-    </tr>
-    <tr>
-        <th>Стоимость</th>
-        <td>100 руб.</td>
-        <td>200 руб.</td>
-        <td>100 руб.</td>
+
+    <a href="services.html"> <img src="img\services.jpg"> </a>
+    <br>
+
+    <a href="contacts.html"> <img src="img\contacts.jpg"> </a>
+    <br>
 
 
-    </tr>
+    <h2 align="center">Веб-студия предоставаляет широкий спектр услуг</h2>
+
+    <ul type="square">  <!--circle | square-->
+        <li>Интеренет-маркетинг</li>
+        <li>Создание сайтов</li>
+        <li>Продвижение сайтов</li>
+        <li>Поддержка сайтов</li>
+        <li><a href="web_calc.html">Веб-калькулятор</a></li>
+    </ul>
+
+
+    <table border="1" align="center">
+        <caption align="center">Прайс лист</caption>
+        <br>
+        <tr>
+             <th>Вид услуги</th>
+             <td>Интеренет-маркетинг</td>
+             <td>Создание сайтов</td>
+             <td>Продвижение сайтов</td>
+        </tr>
+         <tr>
+             <th>Стоимость</th>
+             <td>100 руб.</td>
+             <td>200 руб.</td>
+             <td>100 руб.</td>
+         </tr>
 </table>
+
+<h2 align="center">Оставьте заявку на оказание услуг</h2>
+
+<form action="" method="post">
+    <fieldset>
+      <fieldset>
+        <legend align="center"> Форма заявки</legend>
+
+            <div>
+                <label for="nameField"> Введите полное имя </label>
+                <input id="nameField" type="text" placeholder="ФИО" required>
+            </div>
+
+            <div>
+                <label for="dateField"> Дата рождения </label>
+                <input id="dateField" type="date" value="01.01.2017" required>
+            </div>
+
+            <div>
+                <label for="cityField"> Выберите город </label>
+                <select id="cityField">
+
+                    <option value="1"> Санкт-Петербург</option>
+                    <option value="2"> Москва</option>
+                    <option value="3"> Ростов-на-Дону</option>
+                    <option value="4"> Самара</option>
+
+                </select>
+            </div>
+
+
+            <div>
+                <label for="mailField"> Адрес электронной почты</label>
+                <input id="mailField" type="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div>
+                <label for="phoneField"> Поле для телефона</label>
+                <input id="phoneField" type="tel" pattern="2[0-9]{3}-[0-9]{3}" placeholder="+7">
+            </div>
+
+                    <fieldset>
+                        <legend align="center"> Тип услуги </legend>
+
+                        <label><input name="message[]" type="checkbox">Интеренет-маркетинг</label>
+                        <label><input name="message[]" type="checkbox">Создание сайтов</label>
+                        <label><input name="message[]" type="checkbox">Продвижение сайтов</label>
+                        <label><input name="message[]" type="checkbox">Поддержка сайтов</label>
+                        <label><input name="message[]" type="checkbox">Веб-калькулятор</label>
+                    </fieldset>
+          <br>
+            <div>
+              <input  type="submit" value="Отправить">
+              <input type="reset" value="Сброс">
+            </div>
+
+      </fieldset>
+    </fieldset>
+</form>
+
+
 </body>
 </html>

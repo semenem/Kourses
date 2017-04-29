@@ -4,28 +4,31 @@
     <meta charset="utf-8">
     <title>Таблицы</title>
     <link rel="shortcut icon" href="img\octopus.png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body background="img\FONT1.jpg">
-    <div align="right">
+<body>
+    <div class="search" align="right">
         <label for="searchField">Поиск по сайту</label>
         <input id="searchField" type="search">
     </div>
 
-    <img src="img\FONT_menu.jpg" alt="Здесь должна быть картинка">
+    <!--<body background="img\FONT1.jpg">-->
 
-    <h1 align="center">Веб-студия OCTOPUS</h1>
+    <!--<img src="img\FONT_menu.jpg" alt="Здесь должна быть картинка">-->
+    <header></header>
+    <div >
+        <h1 align="center"> Веб-студия OCTOPUS</h1>
+    </div>
 
-    <img src="img\FONT_menu_gold.jpg" alt="Здесь должна быть картинка">
-
-    <a href="index.html"> <img src="img\Main.jpg"> </a>
-    <br>
-
-    <a href="services.html"> <img src="img\services.jpg"> </a>
-    <br>
-
-    <a href="contacts.html"> <img src="img\contacts.jpg"> </a>
-    <br>
-
+    <div align="center">
+        <nav class="menu">
+            <ul>
+                <li> <a href="index.html"> Главная </a></li>
+                <li> <a href="services.html"> Услуги </a> </li>
+                <li> <a href="contacts.html"> Контакты </a> </li>
+            </ul>
+        </nav>
+    </div>
 
     <h2 align="center">Веб-студия предоставаляет широкий спектр услуг</h2>
 
@@ -57,7 +60,7 @@
 
 <h2 align="center">Оставьте заявку на оказание услуг</h2>
 
-<form action="" method="post">
+    <form action="" method="post">
     <fieldset>
       <fieldset>
         <legend align="center"> Форма заявки</legend>
@@ -113,7 +116,11 @@
       </fieldset>
     </fieldset>
 </form>
-
+    <div>
+        <footer>
+            <a align="right" href="Policy.html"> <p>Copyright © 2017</p> </a>
+        </footer>
+    </div>
 
 </body>
 </html>

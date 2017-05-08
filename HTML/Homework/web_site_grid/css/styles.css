@@ -15,6 +15,14 @@
 /*}*/
 /*.topmenu li:hover .submenu {*/
 	/*display: block;*/
+.text_header {
+	line-height: 200px;
+}
+
+
+
+
+
 .header_main {
     height: 400px;
     background-image: url(../image/background_button_octopus.jpg);
@@ -47,8 +55,8 @@
 h1 {
     color: yellow;
     text-align: center;
-    vertical-align: middle;
-    font-family: Arial, "Times New Roman";
+    /*vertical-align: middle;*/
+    font-family: "Adobe Heiti Std R";
 }
 h2 {
     margin: 0;
@@ -63,7 +71,7 @@ h2 {
 .menu {
 
 	/*background: url(../image/FONT_menu2.jpg);*/
-	padding: 0;
+	/*padding: 0;*/
 }
 
 
@@ -71,7 +79,7 @@ h2 {
 	/*display: inline;*/
 	background: none;
 	list-style-type: none;
-	padding: 30px;
+	padding: 40px 0;
 
 }
 
@@ -85,6 +93,16 @@ h2 {
     font-family:  Arial, "Times New Roman";
     font-weight: bold;
 }
+
+.submenu {
+	display: none;
+}
+
+.menu li:hover .submenu {
+	display: inline;
+
+}
+
 /*end of menu*/
 
 /*

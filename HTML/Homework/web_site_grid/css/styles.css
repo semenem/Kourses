@@ -60,7 +60,18 @@ h1 {
 }
 h2 {
     margin: 0;
+	padding: 15px;
+	font-size: 40px;
+	/*align-content: center;*/
+	font-weight: bold;
+
 }
+
+h3 {
+	font-family: Arial;
+	font-size: 30px;
+}
+
 .search {
 	margin-top: 0;
 	vertical-align: middle;
@@ -71,7 +82,8 @@ h2 {
 .menu {
 
 	/*background: url(../image/FONT_menu2.jpg);*/
-	/*padding: 0;*/
+	padding: 25px;
+	align-content: center;
 }
 
 
@@ -80,7 +92,7 @@ h2 {
 	background: none;
 	list-style-type: none;
 	padding: 40px 0;
-
+	display: inline;
 }
 
 .menu a {
@@ -99,7 +111,7 @@ h2 {
 }
 
 .menu li:hover .submenu {
-	display: inline;
+	display: inline-block;
 
 }
 
@@ -164,3 +176,11 @@ h2 {
 .footer {
 	background: gray;
 }
+
+.list {
+	padding-left: 800px;
+}
+/*table{*/
+	/*!*margin: 500;*!*/
+	/*!*padding-left: 700px*!*/
+/*}*/

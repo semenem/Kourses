@@ -1,0 +1,91 @@
+        h1{
+       color: aquamarine;
+        padding: 50px;
+        background-image: url(../image/FONT_menu2.jpg);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-bottom: navajowhite solid 2px;
+    }
+
+    .search {
+        vertical-align: middle;
+        background: lightgray;
+            /*margin: 0;*/
+    }
+    .header {
+        padding: 300px;
+    }
+    .menu {
+        background: url(../img/FONT_menu2.jpg);
+        padding: 15px;
+    }
+
+
+    .menu li {
+        display: inline;
+        background: none;
+        list-style-type: none;
+        padding: 30px;
+
+    }
+
+    .menu a {
+        list-style-type: none;
+        display: inline;
+        padding: 20px;
+    }
+    /*end of menu*/
+
+    /*
+    .menu li {
+        display: inline;
+        list-style-type: none;
+        padding: 15px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color : black ;
+        display: inline-block;
+    }
+
+
+    */
+
+    .menu li:hover {
+        height: 20px;
+        background: navajowhite;
+    }
+
+
+    .menu li:active {
+        box-shadow: black;
+        background: none;
+    }
+
+    .background_octopus{
+        position: relative;
+        background: gray;
+        height: 400px;
+
+    }
+
+    .image_octopus {
+        background: gray;
+        /*position: absolute;*/
+        /*top: 10px;*/
+        display:block;
+        margin:0 auto;
+
+        /*border: navajowhite;*/
+    }
+
+    .text{
+        font-family: Times New Roman;
+        font-style: normal;
+        position: static;
+        top: 1000px;
+    }
+    .footer {
+        background: gray;
+    }

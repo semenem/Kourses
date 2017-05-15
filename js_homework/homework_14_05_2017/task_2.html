@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    result = confirm("Если вы хотите вводить числа нажмите ОК, использовать генератор СЧ CANCEL");
+
+    switch(result) {
+        case (true):
+            var number = +prompt("Введите число от 0 до 10");
+            switch (number) {
+                case (0):
+                    alert(number + " - Ноль");
+                    break;
+                case (1):
+                    alert(number + " - Один");
+                    break;
+                case (2):
+                    alert(number + " - Два");
+                    break;
+                case (3):
+                    alert(number + " - Три");
+                    break;
+                case (4):
+                    alert(number + " - Четыре");
+                    break;
+                case (5):
+                    alert(number + " - Пять");
+                    break;
+                case (6):
+                    alert(number + " - Шесть");
+                    break;
+                case (7):
+                    alert(number + " - Семь");
+                    break;
+                case (8):
+                    alert(number + " - Восемь");
+                    break;
+                case (9):
+                    alert(number + " - Девять");
+                    break;
+                default:
+                    alert("Что то пошло не так!");
+
+            }
+            break;
+        case (false):
+            var number = Math.abs(+(((Math.random()) * 10).toFixed()) - 1);
+            switch (number) {
+                case (0):
+                    alert(number + " - Ноль");
+                    break;
+                case (1):
+                    alert(number + " - Один");
+                    break;
+                case (2):
+                    alert(number + " - Два");
+                    break;
+                case (3):
+                    alert(number + " - Три");
+                    break;
+                case (4):
+                    alert(number + " - Четыре");
+                    break;
+                case (5):
+                    alert(number + " - Пять");
+                    break;
+                case (6):
+                    alert(number + " - Шесть");
+                    break;
+                case (7):
+                    alert(number + " - Семь");
+                    break;
+                case (8):
+                    alert(number + " - Восемь");
+                    break;
+                case (9):
+                    alert(number + " - Девять");
+                    break;
+                default:
+                    alert("Что то пошло не так!");
+
+            }
+            break;
+    }
+
+</script>
+
+</body>
+</html>

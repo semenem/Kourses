@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h1>Является ли треугольник прямугольным</h1>-->
+<!--<canvas height='320' width='480' id='example'>Обновите браузер</canvas>-->
+<script>
+
+//    var example = document.getElementById("example"),
+//        ctx     = example.getContext('2d');
+//    ctx.fillRect(0, 0, example.width, example.height);
+
+
+    var x1=+prompt("Введите первую координату x вершины X: ");
+    var y1=+prompt("Введите вторую координату y вершины X: ");
+    var x2=+prompt("Введите первую координату x вершины Y: ");
+    var y2=+prompt("Введите вторую координату y вершины Y: ");
+    var x3=+prompt("Введите первую координату x вершины Z: ");
+    var y3=+prompt("Введите вторую координату y вершины Z: ");
+
+    //Расчет длин сторон треугольника
+
+    a=+((Math.sqrt(Math.pow(Math.abs(x2-x1),2)+Math.pow(Math.abs(y2-y1),2))).toFixed(2));
+
+    b=+((Math.sqrt(Math.pow(Math.abs(x3-x2),2)+Math.pow(Math.abs(y3-y2),2))).toFixed(2));
+
+    c=+((Math.sqrt(Math.pow(Math.abs(x3-x1),2)+Math.pow(Math.abs(y3-y1),2))).toFixed(2));
+
+    alert("Длина а: "+a+" Длина b: "+b+" Длина c: "+c);
+
+    if ((a>(b+c))||(b>(a+c))||(c>(a+b))){
+        alert("Условие разрешимости задачи НЕ ВЫПОЛНЯЕТСЯ!");
+    }
+    else alert("Условие разрешимости задачи ВЫПОЛНЯЕТСЯ!");
+
+    //Расчет углов треугольника, где
+
+    // -alpha соотвествует вершине x1,y1;
+    // -beta соотвествует вершине x2,y2;
+    // -gamma соотвествует вершине x3,y3;
+
+    alpha=Math.acos((Math.pow(b,2)+Math.pow(c,2)-Math.pow(a,2))/(2*b*c));
+    alphaPri=alpha*(180/Math.PI);
+
+    beta=Math.acos(((Math.pow(a,2))+(Math.pow(c,2))-(Math.pow(b,2)))/(2*a*c));
+    betaPri=beta*(180/Math.PI);
+
+    gamma=Math.acos(((Math.pow(a,2))+(Math.pow(b,2))-(Math.pow(c,2)))/(2*a*b));
+    gammaPri=gamma*(180/Math.PI);
+
+    alert("Угол альфа: "+(+alphaPri.toFixed(2))+" Угол бета: "+(+betaPri.toFixed(2))+" Угол гамма: "+(+gammaPri.toFixed(2)));
+
+    if ((alphaPri===90)||(betaPri===90)||(gammaPri===90)){
+        alert("Треугольник с вершинами:\nX("+x1+","+y1+")"+"\n"+"Y("+x2+","+y2+")\n"+"Z("+x3+","+y3+")\n"+ "является прямоугольным");
+    }
+    else {
+        alert("Треугольник не является прямоугольным!");
+    }
+//сумма углов превышает 180!!!
+
+</script>
+
+</body>
+</html>
+</body>
+</html>

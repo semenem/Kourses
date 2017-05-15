@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var arrayRaitings=["Плохо","Неудовлетворительно", "Удовлетворительно", "Хорошо", "Отлично"];
+
+    var raiting=+prompt("Поставьте оценку от 1 до 5");
+
+    switch (raiting){
+        case (1):
+            alert(raiting+" - "+arrayRaitings[--raiting]);
+            break;
+        case (2):
+            alert(raiting+" - "+arrayRaitings[--raiting]);
+            break;
+        case (3):
+            alert(raiting+" - "+arrayRaitings[--raiting]);
+            break;
+        case (4):
+            alert(raiting+" - "+arrayRaitings[--raiting]);
+            break;
+        case (5):
+            alert(raiting+" - "+arrayRaitings[--raiting]);
+            break;
+        default:
+            alert("Вы ввели неправильное число!");
+    }
+
+</script>
+
+</body>
+</html>

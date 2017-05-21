@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var value=prompt("Введите число для расчета суммы");
+
+    var regExp=(/\w/g);
+    var arrayValue=value.match(regExp);
+    console.log(arrayValue);
+    var sum=0;
+    for (var i=0; i<+arrayValue.length; i++){
+       sum=sum+(+arrayValue[i]);
+    }
+    alert("Сумма чисел в строке равна: "+sum);
+
+//    //    var Nhtml="";
+//    var html_head="<table><tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>5</th><th>7</th><th>8</th><th>9</th>" +
+//        "<th>10</th></tr></table>";
+//    var masVertical=[1,2,3,4,5,6,7,8,9,10];
+//
+//    for (var j=0; j<10; j++) {
+//        for (var i=0; i<10; i++)
+//        var multiply_value=j*i++;
+//        var html_string="<table><tr><th>multiply_value</th><th>multiply_value</th><th>multiply_value</th><th>multiply_value" +
+//            "</th><th>multiply_value</th><th>multiply_value</th><th>multiply_value</th><th>multiply_value</th>" +
+//            "<th>multiply_value</th><th>multiply_value</th></tr></table>";
+//    }
+    var str='function() {alert(100)}';
+    ptrn=/\(\)/;
+    a=str.match(ptrn);
+    b=str.test(ptrn);
+
+</script>
+</body>
+</html>

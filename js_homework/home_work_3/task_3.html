@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var password=prompt("Введите пароль для верификации");
+    // Проверка длины пароля, от 9 символов
+    var regExp_1=/\w{9,}/g;
+    var regExp_2_1=/[a-z]/g;
+    var regExp_2_2=/[A-Z]/g;
+    var regExp_3=/[0-9]{0,2}]/g;
+    var regExp_4=/\!\$\#\%/;
+//    var regExp_4=/[\!\$\#\%]/;
+
+    if (regExp_1.test(password)) {
+        alert("Первый этап проверки пройден успешно !");
+        }
+//        else alert("Пароль должен содержать не менее 9 символов !")&&
+
+
+    if ((regExp_2_1.test(password))&&(regExp_2_2.test(password))) {
+        alert("Второй этап проверки пройден успешно !");
+    }
+    else alert("Пароль должен содержать английские буквы верхнего и нижнего регистра !");
+
+    if (regExp_3.test(password)) {
+        alert("Третий этап проверки пройден успешно !");
+    }
+    else alert("Пароль должен содержать хотябы две цифры !");
+
+    if (regExp_4.test(password)) {
+        alert("Первый этап проверки пройден успешно !");
+    }
+    else alert("Пароль должен содержать хотябы один неалфавитный символ, например !$#% ");
+</script>
+
+</body>
+</html>
